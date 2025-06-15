@@ -1,6 +1,14 @@
 # Game Piece Position Estimation
 
-This project provides a complete pipeline and full source code for a novel algorithm for object pose estimation, specifically designed for FRC (FIRST Robotics Competition) game pieces. The approach is based on a data-driven, image-matching method that enables extremely fast and accurate estimation of object positions from camera images.
+![Demo](AlgorithmShowcase.gif)  
+*A fast, robust, and field-ready algorithm for real-time object pose estimation in FRC.*
+
+---
+
+This project provides a complete, open-source pipeline for estimating the **real-world position and orientation of FRC game pieces** from camera images. It uses a data-driven image-matching approach, offering **extremely fast and accurate pose estimation**—optimized for Raspberry Pi deployment in real-world matches.
+
+---
+
 
 ## Key Features
 
