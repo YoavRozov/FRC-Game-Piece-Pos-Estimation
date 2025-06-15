@@ -10,34 +10,47 @@ This project provides a complete, open-source pipeline for estimating the **real
 ---
 
 
-## Key Features
+## 🚀 Key Features
 
-- **Extremely Fast and Accurate**: The algorithm leverages a precomputed dataset of rendered images and their corresponding real-world positions, allowing for rapid and robust pose estimation at runtime.
-- **Full Source Code and Explanations**: The repository includes all Python source code and detailed explanations of the algorithm, data generation, and processing steps.
-- **Pipeline Architecture**: Utilizes multi-processing to maximize throughput, ensuring the latest camera data is always processed and stale data is discarded.
-- **FRC-Ready**: Designed for use on Raspberry Pi or similar hardware, with integration for FRC networking (NetworkTables).
+- ⚡ **High-Speed & Accuracy**  
+  Matches live camera images to a precomputed dataset of rendered frames for sub-10ms pose estimation.
+  
+- 🧠 **Fully Explained, Fully Open**  
+  Includes all source code, rendering tools, and clear documentation of each stage—perfect for learning, customization, or direct use.
 
-## How It Works
+- 🛠️ **Modular, Multi-Process Architecture**  
+  Ensures real-time performance by offloading detection, estimation, and networking to separate processes.
 
-1. **Preprocessing (Offline, One-Time)**
-   - Use Blender to render thousands of images of the game piece from all relevant positions and angles, with known camera parameters (The provided Blender Files include rendering scripts).
-   - Each image is annotated with its real-world position and orientation (If the game piece is non-symmetrical).
-   - The resulting dataset is stored as a CSV file.
+- 🤖 **Built for FRC Robots**  
+  Seamless integration with FRC systems via **NetworkTables**, optimized for Raspberry Pi or similar edge devices.
 
-2. **Runtime (On-Robot)**
-   - Capture frames from a fixed-position camera.
-   - Detect the game piece in the image using color or ML-based detection.
-   - Extract the bounding rectangle (and optionally, orientation) of the detected object.
-   - Match the detected rectangle to the closest entry in the precomputed dataset using a fast search algorithm.
-   - Output the estimated real-world position (and orientation) of the game piece.
+---
 
-## Limitations
+## 🔍 How It Works
 
-- **Requires Fixed Camera Position**: The camera must remain in the exact same position and orientation as during the Blender rendering phase.
-- **Long Preprocessing Time**: Generating the dataset in Blender can take around 2 hours, depending on CPU, number of images, and resolution.
-- **Not Suitable for Dynamic Camera Setups**: Any change in camera pose requires re-rendering the dataset.
+### 1. Preprocessing (One-Time, Offline)
+- Render thousands of labeled images in **Blender** using the provided scripts.
+- Each frame encodes the 3D pose of the game piece from a fixed camera viewpoint.
+- Store the dataset in CSV format with pose metadata.
 
-## Project Structure
+### 2. Runtime (On-Robot)
+- Capture live frames from the robot’s fixed-position camera.
+- Detect the game piece using either simple color filtering or ML-based segmentation.
+- Extract bounding rectangles and (optionally) orientation info.
+- Find the closest match in the dataset using a **fast image similarity search**.
+- Output the real-world position and orientation of the game piece.
+
+---
+
+## ⚠️ Limitations
+
+- 📸 **Fixed Camera Only**: Must remain identical to the one used during dataset rendering.
+- 🕒 **Long Preprocessing Time**: Dataset generation can take ~2 hours.
+- ❌ **Not Suitable for Moving Cameras**: Repositioning the camera requires full dataset regeneration.
+
+---
+
+## 📁 Project Structure
 
 ```
 game-piece-pos-estimation
@@ -54,7 +67,9 @@ game-piece-pos-estimation
 └── README.md                    # Project documentation
 ```
 
-## Setup Instructions
+---
+
+## 🛠️ Setup Instructions
 
 1. **Clone the repository**:
    ```bash
@@ -76,7 +91,7 @@ game-piece-pos-estimation
    python RaspberryPiCode/main.py
    ```
 
-## Dependencies
+## 📦 Dependencies
 
 - OpenCV
 - NumPy
@@ -84,6 +99,6 @@ game-piece-pos-estimation
 - ntcore
 - cscore
 
-## License
+## 📜 License
 
 This project is licensed under the AGPL-3.0 License. See the LICENSE file for more details.
