@@ -20,7 +20,7 @@ game-piece-pos-estimation
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/YoavRozov/FRC-Game-Piece-Pos-Estimation.git
    cd game-piece-pos-estimation
    ```
 
