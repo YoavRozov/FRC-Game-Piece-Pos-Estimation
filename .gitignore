@@ -192,6 +192,5 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
-Data/2023-Cone/ImagesGenerator.blend1
-Data/2024-Note/ImagesGenerator.blend1
-Data/2024-Note/ImagesGenerator.blend1
+Data/2023-Cone/ImagesGeneratorCone.blend1
+Data/2024-Note/ImagesGeneratorNote.blend1
