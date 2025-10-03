@@ -95,8 +95,8 @@ pip install -r requirements.txt
 
 
 <video controls>
-  <source src="/media/BlenderSetup.mp4" type="video/mp4">
-  <source src="/media/BlenderSetup.webm" type="video/webm">
+  <source src="media/BlenderSetup.mp4" type="video/mp4">
+  <source src="media/BlenderSetup.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -131,8 +131,8 @@ Run the `image_capture.py` script and capture a few photos with the game piece c
     - [How to Match a Photo with fSpy](https://www.youtube.com/watch?v=7pgDrQzThH0)
 
 <video controls>
-  <source src="/media/CameraSetup.mp4" type="video/mp4">
-  <source src="/media/CameraSetup.webm" type="video/webm">
+  <source src="media/CameraSetup.mp4" type="video/mp4">
+  <source src="media/CameraSetup.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -144,8 +144,8 @@ Run the `image_capture.py` script and capture a few photos with the game piece c
 4. With the object selected, open **Object Properties → Scale** and set the scale.
 5. Press `F3`, search for **`Origin to Geometry`**, and press **Enter** to center the origin.
 <video controls>
-  <source src="/media/GamePieceImport.mp4" type="video/mp4">
-  <source src="/media/GamePieceImport.webm" type="video/webm">
+  <source src="media/GamePieceImport.mp4" type="video/mp4">
+  <source src="media/GamePieceImport.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -162,8 +162,8 @@ Run the `image_capture.py` script and capture a few photos with the game piece c
     Use `s` → `x` on your keyboard to scale two or more vertices on the x axis.
 
 <video controls>
-  <source src="/media/CameraPlaneSetup.mp4" type="video/mp4">
-  <source src="/media/CameraPlaneSetup.webm" type="video/webm">
+  <source src="media/CameraPlaneSetup.mp4" type="video/mp4">
+  <source src="media/CameraPlaneSetup.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -175,8 +175,8 @@ Run the `image_capture.py` script and capture a few photos with the game piece c
 4. **Run** the script and wait for rendering to complete.
 
 <video controls>
-  <source src="/media/RunMainScript.mp4" type="video/mp4">
-  <source src="/media/RunMainScript.webm" type="video/webm">
+  <source src="media/RunMainScript.mp4" type="video/mp4">
+  <source src="media/RunMainScript.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
