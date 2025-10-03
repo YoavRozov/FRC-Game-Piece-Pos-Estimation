@@ -1,5 +1,6 @@
 site_name: Game Piece Position Estimation
 docs_dir: docs
+site_url: https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/
 site_description: Step-by-step guide to set up the repo, render data in Blender, and run the position estimation pipeline.
 
 repo_url: https://github.com/YoavRozov/FRC-Game-Piece-Pos-Estimation
