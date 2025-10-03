@@ -95,8 +95,8 @@ pip install -r requirements.txt
 
 
 <video controls>
-  <source src="media/BlenderSetup.mp4" type="video/mp4">
-  <source src="media/BlenderSetup.webm" type="video/webm">
+  <source src="https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/media/BlenderSetup.mp4" type="video/mp4">
+  <source src="https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/media/BlenderSetup.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
