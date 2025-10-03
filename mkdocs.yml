@@ -1,0 +1,76 @@
+site_name: Game Piece Position Estimation
+docs_dir: docs
+site_description: Step-by-step guide to set up the repo, render data in Blender, and run the position estimation pipeline.
+
+repo_url: https://github.com/YoavRozov/FRC-Game-Piece-Pos-Estimation
+repo_name: Position Estimation
+
+nav:
+  - Home: index.md
+  - Step By Step Guide: setup.md
+
+theme:
+  name: material
+  language: en
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - content.code.copy         # enable copy buttons on code blocks
+    - content.tabs.link         # keep tabs in sync across pages
+    - navigation.top            # show top navigation
+    - navigation.tracking       # highlight active section in the ToC
+    - navigation.footer         # previous/next footer links
+    - toc.integrate             # integrate page ToC into content area
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search                      # keep search enabled (especially when adding other plugins)
+
+markdown_extensions:
+  # Core Python-Markdown extensions (Material supports these)
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # PyMdown Extensions (recommended by Material for tabs & fenced code)
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: false
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YoavRozov
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/yoav-rozov-0a6998295/
+
+copyright: '&copy; 2025 Yoav Rozov'

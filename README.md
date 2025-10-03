@@ -1,32 +1,33 @@
 # Game Piece Position Estimation
 
-![Demo](AlgorithmShowcase.gif)  
+![Demo](docs/media/AlgorithmShowcase.gif)  
 *A fast, robust, and field-ready algorithm for real-time object pose estimation in FRC.*
 
 ---
-
-This project provides a complete, open-source pipeline for estimating the **real-world position and orientation of FRC game pieces** from camera images. It uses a data-driven image-matching approach, offering **extremely fast and accurate pose estimation**—optimized for Raspberry Pi deployment in real-world matches.
+## Documentation
+Full setup instructions, Blender configuration, and usage examples are available in the Step-by-Step Guide.
 
 ---
+## Overview
+This project provides a complete, open-source pipeline for estimating the real-world position and orientation of FRC game pieces from camera images. It uses a data-driven image-matching approach, offering extremely fast and accurate pose estimation—optimized for Raspberry Pi deployment in real-world matches.
 
+## Key Features
 
-## 🚀 Key Features
-
-- ⚡ **High-Speed & Accuracy**  
+- **High-Speed & Accuracy**  
   Matches live camera images to a precomputed dataset of rendered frames for sub-10ms pose estimation.
   
-- 🧠 **Fully Explained, Fully Open**  
+- **Fully Explained, Fully Open**  
   Includes all source code, rendering tools, and clear documentation of each stage—perfect for learning, customization, or direct use.
 
-- 🛠️ **Modular, Multi-Process Architecture**  
+- **Modular, Multi-Process Architecture**  
   Ensures real-time performance by offloading detection, estimation, and networking to separate processes.
 
-- 🤖 **Built for FRC Robots**  
+- **Built for FRC Robots**  
   Seamless integration with FRC systems via **NetworkTables**, optimized for Raspberry Pi or similar edge devices.
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 ### 1. Preprocessing (One-Time, Offline)
 - Render thousands of labeled images in **Blender** using the provided scripts.
@@ -42,34 +43,7 @@ This project provides a complete, open-source pipeline for estimating the **real
 
 ---
 
-## ⚠️ Limitations
-
-- 📸 **Fixed Camera Only**: Must remain identical to the one used during dataset rendering.
-- 🕒 **Long Preprocessing Time**: Dataset generation can take ~2 hours.
-- ❌ **Not Suitable for Moving Cameras**: Repositioning the camera requires full dataset regeneration.
-
----
-
-## 📁 Project Structure
-
-```
-game-piece-pos-estimation
-├── RaspberryPiCode
-│   ├── main.py                  # Entry point of the application
-│   ├── frame_capture.py         # Frame capture class
-│   ├── game_piece_detection.py  # Game piece detection class
-│   ├── game_piece_pos_estimation.py # Pose estimation class
-│   ├── network_manager.py       # NetworkTables integration
-├── Data/                        # Precomputed datasets (CSV, Blender Files, Output of Blender Files)
-├── PositionEstimation/          # Data (from Blender) processing scripts and notebooks to showcase the algorithm
-├── SimpleColorDetection/        # Color detection calibration and demos
-├── requirements.txt             # Python dependencies
-└── README.md                    # Project documentation
-```
-
----
-
-## 🛠️ Setup Instructions
+## Quick Start
 
 1. **Clone the repository**:
    ```bash
@@ -82,22 +56,10 @@ game-piece-pos-estimation
    pip install -r requirements.txt
    ```
 
-3. **Generate Dataset (if needed)**:
-   - Use the Blender files inside "Data" or create your own to generate the required dataset
-   - Use the the Jupyter notebooks in `PositionEstimation/` to process the dataset from Blender and convert it to a CSV dataset for your specific game piece and camera setup.
+3. **Read the full setup guide**:
+  [Here](Link)
 
-4. **Run the Application**:
-   ```bash
-   python RaspberryPiCode/main.py
-   ```
-
-## 📦 Dependencies
-
-- OpenCV
-- NumPy
-- Pandas
-- ntcore
-- cscore
+---
 
 ## 📜 License
 
