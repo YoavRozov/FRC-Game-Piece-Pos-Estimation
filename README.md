@@ -57,10 +57,10 @@ This project provides a complete, open-source pipeline for estimating the real-w
    ```
 
 3. **Read the full setup guide**:
-  [Here](https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/)
+  [Here](https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/setup/)
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the AGPL-3.0 License. See the LICENSE file for more details.
