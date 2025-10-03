@@ -57,7 +57,7 @@ This project provides a complete, open-source pipeline for estimating the real-w
    ```
 
 3. **Read the full setup guide**:
-  [Here](Link)
+  [Here](https://yoavrozov.github.io/FRC-Game-Piece-Pos-Estimation/)
 
 ---
 
