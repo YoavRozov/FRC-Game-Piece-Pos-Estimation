@@ -7,6 +7,8 @@ description: Overview of the algorithm and demo for real-time pose estimation of
 
 ![Demo](media/AlgorithmShowcase.gif)
 
+![Coral Demo](media/CoralDemo.gif)
+
 *A fast, robust, and field-ready algorithm for real-time object pose estimation in FRC.*
 
 ---

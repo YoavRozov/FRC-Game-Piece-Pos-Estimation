@@ -1,6 +1,8 @@
 # Game Piece Position Estimation
 
-![Demo](docs/media/AlgorithmShowcase.gif)  
+![Demo](docs/media/AlgorithmShowcase.gif) 
+
+![Coral Demo](docs/media/CoralDemo.gif)
 *A fast, robust, and field-ready algorithm for real-time object pose estimation in FRC.*
 
 ---
