@@ -4,4 +4,3 @@ pandas
 ntcore
 cscore
 opencv-contrib-python
-```
